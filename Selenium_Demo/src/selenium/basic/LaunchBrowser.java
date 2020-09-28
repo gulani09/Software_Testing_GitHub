@@ -24,7 +24,7 @@ public class LaunchBrowser {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			// get url
-			driver.get("https://www.amazon.com.au");
+			driver.get(AMAZON_URL);
 
 			// call get commands 
 			getCommands();

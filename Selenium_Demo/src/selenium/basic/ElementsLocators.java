@@ -16,24 +16,17 @@ public class ElementsLocators {
 
 	public static WebDriver driver = null;
 
-	public static void main(String[] args) {
-		ElementsLocators elementsLocators = new ElementsLocators();
-		elementsLocators.findLocatorsInAmazon();
-		//elementsLocators.findLocatorsInFacebook();
-		elementsLocators.closeBrower();
-	}
-
 	/**
 	 * Close the current brower
 	 */
-	private void closeBrower() {
+	public void closeBrower() {
 		driver.close();
 	}
 
 	/**
 	 * Find the text locators using the facebook website
 	 */
-	private void findLocatorsInFacebook() {
+	public void findLocatorsInFacebook() {
 		try {
 			invokeBrowser("https://www.facebook.com/");
 			driver.findElement(By.name("firstname")).sendKeys("Gulani");
@@ -48,7 +41,7 @@ public class ElementsLocators {
 	/*
 	 * Launch the browser
 	 */
-	private void invokeBrowser(String url) {
+	public void invokeBrowser(String url) {
 		try {
 			System.setProperty("webdriver.chrome.driver",
 					"E:\\Education_Profession\\Test Learning\\Development\\Test Development\\Selenium\\Projects Support Files\\chromedriver_win32\\chromedriver.exe");
@@ -68,7 +61,7 @@ public class ElementsLocators {
 	 * 
 	 * @param driver
 	 */
-	private void findLocatorsInAmazon() {
+	public void findLocatorsInAmazon() {
 		try {
 			invokeBrowser("https://www.amazon.com.au/");
 			/*
