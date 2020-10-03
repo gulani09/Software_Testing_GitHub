@@ -63,7 +63,6 @@ public class ElementsLocators {
 	 */
 	public void findLocatorsInAmazon() {
 		try {
-		    // This is a invokeBrowser
 			invokeBrowser("https://www.amazon.com.au/");
 			/*
 			 * driver.findElement(By.linkText("Best Sellers")).click(); Thread.sleep(3000);
