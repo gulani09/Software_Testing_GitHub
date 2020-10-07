@@ -2,6 +2,7 @@
 Documentation    This is basic concept about suite
 Resource    ../Resources/RobotGUI.robot
 Resource    ../Resources/RobotCommon.robot
+
 Suite Setup    Insert testing data
 Test Setup    Beginging the web test
 Test Teardown    Ending the web test
