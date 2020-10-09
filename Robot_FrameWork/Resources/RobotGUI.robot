@@ -27,5 +27,6 @@ Add to the card
 
 Checkout product
     Card.Checkout
+    LandingPage.Sleep for load
 
 

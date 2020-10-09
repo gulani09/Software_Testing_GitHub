@@ -8,6 +8,11 @@ Test Setup    Beginging the web test
 Test Teardown    Ending the web test
 Suite Teardown    Cleanup testing data
 
+*** Variables ***
+${BROWSER} =    chrome
+${URL} =    http://automationpractice.com/
+${SEARCH_ITEM} =    t-shirt
+
 *** Test Cases ***
 User Search for product
     RobotGUI.Search for the product

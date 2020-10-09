@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Load
-    Go To    http://automationpractice.com/
+    Go To    ${URL}
 
 Maximize window
     maximize browser window
